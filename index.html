@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title>Form Submission</title>
+  <!--Links bootstrap-->
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Links CSS-->
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          New Users
+        </div>
+        <div class="panel-body">
+          <!-- This is our form -->
+          <form name="userForm" class="form">
+            <div class="form-group">
+              <label>User Name</label>
+              <input type="text" class="form-control" placeholder="name" id="name">
+              <label>User Job</label>
+              <input type="text" class="form-control" placeholder="job" id="job">
+              <hr>
+              <button type="submit" class="btn btn-success btn-block" id="addUser">Submit</button>
+              <button type="reset" class="btn btn-default btn-block">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- This is the recently added users section -->
+      <div class="col-md-12">
+        <div class="well">
+          Recently Added User
+          <div id="recentUser">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- This is the GET current users section -->
+    <div class="">
+      <div class="col-md-6">
+        <div class="well">
+          <button class="btn btn-default btn-block" id="getUsers">GET current users</button>
+          <hr>
+          <div id="userInfo1">
+          </div>
+          <div id="userInfo2">
+          </div>
+          <div id="userInfo3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="./jquery.min.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
